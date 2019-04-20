@@ -1,29 +1,54 @@
 <template>
   <div id="app">
-    <div id="nav">
-      <router-link to="/">Home</router-link> |
-      <router-link to="/about">About</router-link>
+    <div class="logo">
+      <img src="../src/assets/logo.png" alt="logo" title="JK-World">
+    </div>
+    <div id="nav" class="d-flex justify-content-center">
+      <b-nav>
+        <b-nav-item>
+          <router-link to="/">首頁</router-link>
+        </b-nav-item>
+        <b-nav-item>
+          <router-link to="/calculation">計算</router-link>
+        </b-nav-item>
+      </b-nav>
     </div>
     <router-view/>
   </div>
 </template>
 
-<style lang="scss">
+
+
+<style scoped lang="scss">
 #app {
-  font-family: 'Avenir', Helvetica, Arial, sans-serif;
+  font-family: "Avenir", Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
   color: #2c3e50;
 }
 #nav {
-  padding: 30px;
+  padding: 3px;
+  text-align: center;
   a {
     font-weight: bold;
     color: #2c3e50;
+    padding: 10px;
+    :hover {
+      color: darkgoldenrod;
+    }
     &.router-link-exact-active {
-      color: #42b983;
+      color: brown;
     }
   }
 }
+img {
+  max-width: 100%;
+  height: auto;
+}
+.logo {
+  border-bottom: 5px dotted #a9a9a9;
+  text-align: left;
+}
 </style>
+
