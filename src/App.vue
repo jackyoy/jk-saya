@@ -9,7 +9,7 @@
           <router-link to="/">首頁</router-link>
         </b-nav-item>
         <b-nav-item>
-          <router-link to="/calculation">計算</router-link>
+          <router-link to="/Calculation">計算</router-link>
         </b-nav-item>
       </b-nav>
     </div>
